@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Arkeez Vault</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="left-side">
+                <div class="nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link">
+                    <a href="#about">About</a>
+                </div>
+                <div class="nav-link">
+                    <a href="#portfolio-items">Projects</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="brand">
+                    <div>Arkeez Vault</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="about">
+                <div class="about-me">
+                    <div class="about-background"></div>
+                    <div class="about-text">
+                        <div class="about-img">
+                            <img src="images/me.png" alt="avatar">
+                        </div>
+                        <div class="about-description">
+                            <h4>Hi I'm Baraa</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis aliquid assumenda veniam voluptatem, libero sint ratione voluptatum perspiciatis, laborum cupiditate consequatur. Porro tenetur pariatur, ab vel asperiores recusandae vero earum!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio-items">
+                <div class="portfolio-item">
+                    <div class="portfolio-img-background" style="background-image: url(images/one.jpg)"></div>
+                    <div class="img-text">
+                        <div class="title">
+                            <h4>Project 1</h4>
+                        </div>
+                        <div class="subtitle">
+                            Some nights i stay up looking at my castle
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img-background" style="background-image: url(images/two.jpg)"></div>
+                    <div class="img-text">
+                        <div class="title">
+                            <h4>Project 2</h4>
+                        </div>
+                        <div class="subtitle">
+                            Some nights i call it a draw
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img-background" style="background-image: url(images/three.jpg)"></div>
+                    <div class="img-text">
+                        <div class="title">
+                            <h4>Project 3</h4>
+                        </div>
+                        <div class="subtitle">
+                            Some nights i stay up looking at my castle
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            });
+
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            });
+        });
+    </script>
+</body>
+</html>

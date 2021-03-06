@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap");
+
+:root {
+  --primary-color: #887f73;
+  --secondary-color: #8bc53d;
+  --secondary-light-color: #9ee046;
+  --text-color: #565360;
+  --label-color: #908e9b;
+  --disabled-color: #e1dfe9;
+  --border-color: #f2f5f5;
+  --white-color: #fff;
+  --ar-font-family: "Cairo", sans-serif;
+  --en-font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.2rem;
+  font-family: "Cairo", sans-serif;
+}
+
+/* Utilities */
+.active {
+  color: var(--secondary-color);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.px-slider {
+  padding: 5rem;
+}
+
+.py-1 {
+  padding: 0.5rem 0;
+}
+
+.py-2 {
+  padding: 1rem 0;
+}
+
+.py-4 {
+  padding: 2rem 0;
+}
+
+.px-4 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.m-2 {
+  margin: 1rem;
+}
+
+.mx-2 {
+  margin: 0 1rem;
+}
+
+.mx-4 {
+  margin: 0 2rem;
+}
+
+.my-1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-2 {
+  margin: 1rem 0 !important;
+}
+
+.my-4 {
+  margin: 2rem 0;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.text-primary {
+  color: var(--text-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+
+.text-muted {
+  color: var(--disabled-color);
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-md {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.text-lg {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.link {
+  color: var(--disabled-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--white-color);
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("/img/1.jpg") no-repeat center center/cover;
+  height: 100vh;
+  z-index: 0;
+}
+
+#lang {
+  background-color: var(--secondary-color);
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav > ul > li {
+  list-style: none;
+}
+
+nav > ul > li > .link:hover {
+  color: var(--secondary-light-color);
+}
+
+#hero {
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#hero > .hero--content {
+  position: relative;
+  top: -20%;
+  text-align: center;
+}
+
+#hero > .hero--content > p {
+  line-height: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.075rem;
+  text-align: justify;
+}
+
+main {
+  padding: 4rem;
+}
+
+#vision-mission > article {
+  width: 100%;
+  margin: 0 1rem;
+  text-align: justify;
+  padding: 2rem 1rem;
+}
+
+#partners {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+
+#partners h1 {
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+}
+
+#partners > article {
+  width: 100%;
+}
+
+.section-mid {
+  padding-top: 1rem;
+}
+
+#partners > article > a {
+  text-align: center;
+}
+
+#partners > article > a > img {
+  display: block;
+  margin: auto;
+  width: 25%;
+}
+
+#partners > article > p {
+  text-align: justify;
+}
+
+#work {
+  padding: 2.5rem;
+}
+
+#work > .areas {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#work > .areas > article {
+  width: 100%;
+}
+
+#work > .areas > article > p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: justify;
+  margin-top: 0.5rem;
+}
+
+.team-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.team-section > .team--content {
+  padding: 7rem 3rem;
+}
+
+.team-section > .team--content > p {
+  text-align: justify;
+  color: var(--white-color);
+}
+
+#interests {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("/img/6.jpg") no-repeat center center/cover;
+  padding: 2rem 0;
+  color: var(--white-color);
+  margin-left: -4rem;
+  margin-right: -4rem;
+}
+
+.interest-grid {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(1fr, 5);
+  grid-gap: 1rem;
+}
+
+/* Slideshow */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  color: #fff;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.service {
+  padding: 4rem 3rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  nav > ul {
+    display: none;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  #hero > .hero--content {
+    top: -10%;
+  }
+
+  #hero > .hero--content > p {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-weight: bold;
+  }
+
+  #vision-mission > article {
+    margin: 0;
+  }
+
+  #partners {
+    flex-direction: column;
+  }
+
+  #partners > article > p {
+    text-align: justify;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  #partners > article > a > img {
+    margin-top: 2rem;
+  }
+
+  #work > .areas {
+    flex-direction: column;
+  }
+
+  #work > .areas > article {
+    margin-top: 2rem;
+  }
+
+  #interests {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  #interests > h1 {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+
+  .interest-grid {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    text-align: center;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .dot {
+    display: none;
+  }
+}
