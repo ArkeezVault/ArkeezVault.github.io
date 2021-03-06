@@ -265,7 +265,7 @@ main {
 
 #interests {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
-    url("./img/6.jpg") no-repeat center center/cover;
+    url("img/6.jpg") no-repeat center center/cover;
   padding: 2rem 0;
   color: var(--white-color);
   margin-left: -4rem;
